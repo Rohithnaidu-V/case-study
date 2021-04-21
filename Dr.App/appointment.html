@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .login {
+            max-width: 350px;
+            max-height: 600px;
+            border-radius: 1rem;
+            padding: 16px;
+            background-color: white;
+            margin: 3% auto;
+            box-shadow: 0 0 17px #333;
+        }
+
+        input,
+        textarea {
+            width: 90%;
+            padding: 10px 20px;
+            margin: 15px 0;
+            display: inline-block;
+            border-radius: 0.5rem;
+            background-color: rgb(230, 228, 228);
+            border: none;
+            outline: none;
+        }
+
+        .main {
+            padding-left: 20px;
+        }
+
+        #login-button {
+            width: 90%;
+            margin: 1rem 0;
+            padding: 0.7rem 1rem;
+            border: none;
+            outline: none;
+            border-radius: 0.5rem;
+            background-color: #0c6ce9;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        #login-button:hover {
+            background-color: rgb(76, 182, 185);
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <h1 class="logo">Dr.App</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="doctors.html">Appointment</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Signup</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="bookapp">Book Appointment</h1>
+
+    <div class="login">
+        <div class="main">
+            <form>
+                <label for="pname"><b>Patient Name</b></label>
+                <input type="text" placeholder="Enter Patientname" name="pname" required>
+                <label for="mob"><b>Mobile Number</b></label>
+                <input type="number" placeholder="Enter Mobile Number" name="mob" required>
+                <label for="date"><b>Date</b></label>
+                <input type="date" name="date" required>
+                <label for="time"><b>Time</b></label>
+                <input type="time" name="time" required>
+                <label for="comment"><b>Previous illness if any</b></label>
+                <textarea name="comment" id="" cols="30" rows="5"></textarea>
+                <button id="login-button" type="submit">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="line">
+        <span class="line-1"></span><br>
+        <span class="line-2"></span><br>
+        <span class="line-3"></span><br>
+    </div>
+    <br>
+
+
+
+    <footer>
+        <div class="foot">
+            <div class="about">
+                <h4>About Us</h4>
+                <p>Dr.App is an online <br> Doctor Appointment <br> booking website</p>
+            </div>
+            <div class="qlinks">
+                <p>Quick Links</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="doctors.html">Appointment</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Signup</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <p>Dr.APP - DOCTOR APPOINTMENT</p>
+                <p>FOLLOW US</p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <p id="by">by Rohithnaidu V</p>
+    </footer>
+</body>
+
+</html>

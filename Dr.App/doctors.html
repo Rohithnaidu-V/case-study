@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors list page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .login {
+            max-width: 350px;
+            max-height: 600px;
+            border-radius: 1rem;
+            padding: 16px;
+            background-color: white;
+            margin: 3% auto;
+            box-shadow: 0 0 17px #333;
+        }
+
+        select {
+            width: 90%;
+            padding: 12px 20px;
+            margin: 15px 0;
+            display: inline-block;
+            border-radius: 0.5rem;
+            background-color: rgb(230, 228, 228);
+            border: none;
+            outline: none;
+        }
+
+        .main {
+            padding-left: 20px;
+        }
+
+        #login-button {
+            width: 90%;
+            margin: 1rem 0;
+            padding: 0.7rem 1rem;
+            border: none;
+            outline: none;
+            border-radius: 0.5rem;
+            background-color: #0c6ce9;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        #login-button:hover {
+            background-color: rgb(76, 182, 185);
+        }
+
+        .bookapp-button {
+            width: 80%;
+            margin: 0.8rem 0 0 1.2rem;
+            padding: 0.5rem 1rem;
+            border: none;
+            outline: none;
+            border-radius: 0.5rem;
+            background-color: #0c6ce9;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .bookapp-button:hover {
+            background-color: rgb(76, 182, 185);
+        }
+
+        .column p:first-of-type {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <h1 class="logo">Dr.App</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="doctors.html">Appointment</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Signup</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="bookapp">Book Appointment</h1>
+
+    <div class="login">
+        <div class="main">
+            <form>
+                <label for="city"><b>City</b></label>
+                <select name="city" required>
+                    <option value="">Select City</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Mysuru">Mysuru</option>
+                    <option value="Mangalore">Mangalore</option>
+                </select>
+                <label for="speciality"><b>Speciality</b></label>
+                <select name="speciality" required>
+                    <option value="">Select Speciality</option>
+                    <option value="General Physician">General Physician</option>
+                    <option value="ENT">ENT</option>
+                    <option value="Gynaecologist">Gynaecologist</option>
+                    <option value="Paediatrician">Paediatrician</option>
+                    <option value="Cardiologist">Cardiologist</option>
+                    <option value="Dentist">Dentist</option>
+                    <option value="Orthapaedic Surgeon">Orthapaedic Surgeon</option>
+                    <option value="Psychiatrist">Psychiatrist</option>
+                    <option value="Radiologist">Radiologist</option>
+                </select>
+                <button id="login-button" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="line">
+        <span class="line-1"></span><br>
+        <span class="line-2"></span><br>
+        <span class="line-3"></span><br>
+    </div>
+
+    <div class="blogs">
+        <div class="row">
+            <div class="column">
+                <h3>Dr. Rajesh Kumar</h3>
+                <p>Cardiologist</p>
+                <p>MBBS, MD, DM - Cardiology</p>
+                <p>Apollo Hospital, Bengaluru</p>
+                <button class="bookapp-button" onclick="window.location.href='appointment.html'">Book
+                    Appointment</button>
+            </div>
+            <div class="column">
+                <h3>Dr. Janaki</h3>
+                <p>General Physician</p>
+                <p>MBBS, MD - General Medicine</p>
+                <p>Fortis Hospital, Bengaluru</p>
+                <button class="bookapp-button" onclick="window.location.href='appointment.html'">Book
+                    Appointment</button>
+            </div>
+            <div class="column">
+                <h3>Dr. Ashok Godse</h3>
+                <p>ENT</p>
+                <p>MBBS, MS - ENT</p>
+                <p>Manipal Hospital, Mangalore</p>
+                <button class="bookapp-button" onclick="window.location.href='appointment.html'">Book
+                    Appointment</button>
+            </div>
+            <div class="column">
+                <h3>Dr. Anita Naidu</h3>
+                <p>Paediatrician</p>
+                <p>MBBS, MD - Paediatrics</p>
+                <p>Kims Hospital, Bengaluru</p>
+                <button class="bookapp-button" onclick="window.location.href='appointment.html'">Book
+                    Appointment</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h3>Dr. Chandrika A</h3>
+                <p>General Physician</p>
+                <p>MBBS, MD - Internal Medicine</p>
+                <p>International Hospital, Mangalore</p>
+                <button class="bookapp-button" onclick="window.location.href='appointment.html'">Book
+                    Appointment</button>
+            </div>
+            <div class="column">
+                <h3>Dr. Javid Ahmed</h3>
+                <p>Cardiologist</p>
+                <p>MBBS, MD, DM - Cardiology</p>
+                <p>BGS Hospital, Mysuru</p>
+                <button class="bookapp-button" onclick="window.location.href='appointment.html'">Book
+                    Appointment</button>
+            </div>
+            <div class="column">
+                <h3>Dr. Pradeep Naik</h3>
+                <p>Gynaecologist</p>
+                <p>MBBS, MD - Gynaecology</p>
+                <p>JSS Hospital, Mysuru</p>
+                <button class="bookapp-button" onclick="window.location.href='appointment.html'">Book
+                    Appointment</button>
+            </div>
+            <div class="column">
+                <h3>Dr. Ravi Shankar</h3>
+                <p>Dentist</p>
+                <p>DMD</p>
+                <p>Dental Hospital, Mysuru</p>
+                <button class="bookapp-button" onclick="window.location.href='appointment.html'">Book
+                    Appointment</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot">
+            <div class="about">
+                <h4>About Us</h4>
+                <p>Dr.App is an online <br> Doctor Appointment <br> booking website</p>
+            </div>
+            <div class="qlinks">
+                <p>Quick Links</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="doctors.html">Appointment</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Signup</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <p>Dr.APP - DOCTOR APPOINTMENT</p>
+                <p>FOLLOW US</p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <p id="by">by Rohithnaidu V</p>
+    </footer>
+</body>
+
+</html>

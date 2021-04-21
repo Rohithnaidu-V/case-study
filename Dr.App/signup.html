@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-image: url(images/dna.jpg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header {
+            text-align: center;
+            margin: 1rem 0 2rem 0
+        }
+
+        .login {
+            max-width: 350px;
+            max-height: 600px;
+            border-radius: 1rem;
+            padding: 13px;
+            background-color: white;
+            margin: 1.5rem auto;
+            box-shadow: 0 0 17px #333;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px 20px;
+            margin: 15px 0;
+            display: inline-block;
+            border-radius: 1rem;
+            background-color: rgb(230, 228, 228);
+            border: none;
+            outline: none;
+        }
+
+        label {
+            font-size: 0.9rem;
+        }
+
+        .main {
+            padding-left: 20px;
+        }
+
+        #login-button {
+            width: 90%;
+            margin: 1rem 0;
+            padding: 0.7rem 1rem;
+            border: none;
+            outline: none;
+            border-radius: 1rem;
+            background-color: #0c6ce9;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        #login-button:hover {
+            background-color: rgb(76, 182, 185);
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login">
+        <div class="header">
+            <h1>Signup</h1>
+        </div>
+        <div class="main">
+            <form action="index.html">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label for="email"><b>Email ID</b></label>
+                <input type="email" placeholder="Enter Email ID" name="email" required>
+                <label for="mob"><b>Mobile Number</b></label>
+                <input type="number" placeholder="Enter Mobile Number" name="mob" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button id="login-button" type="submit">Signup</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

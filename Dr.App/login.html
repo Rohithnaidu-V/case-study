@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-image: url(images/dna.jpg);
+      background-repeat: no-repeat;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .header {
+      text-align: center;
+      margin: 1rem 0 2rem 0;
+    }
+
+    .login {
+      max-width: 350px;
+      max-height: 410px;
+      border-radius: 1rem;
+      padding: 16px;
+      background-color: white;
+      margin: 7% auto;
+      box-shadow: 0 0 17px #333;
+    }
+
+    input {
+      width: 90%;
+      padding: 12px 20px;
+      margin: 15px 0;
+      display: inline-block;
+      border-radius: 1rem;
+      background-color: rgb(230, 228, 228);
+      border: none;
+      outline: none;
+    }
+
+    .main {
+      padding-left: 20px;
+    }
+
+    #login-button {
+      width: 90%;
+      margin: 1rem 0;
+      padding: 0.7rem 1rem;
+      border: none;
+      outline: none;
+      border-radius: 1rem;
+      background-color: #0c6ce9;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    #login-button:hover {
+      background-color: rgb(76, 182, 185);
+    }
+
+    .main p {
+      margin: 1rem 0;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="login">
+    <div class="header">
+      <h1>Login</h1>
+    </div>
+    <div class="main">
+      <form action="index.html">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button id="login-button" type="submit">Login</button>
+        <p>Not registered? <a href="signup.html" style="color: #0772fd;">Create an account</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
