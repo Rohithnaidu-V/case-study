@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctors list page</title>
+    <title>Doctors list</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .login {
+        .forms {
             max-width: 350px;
             max-height: 600px;
             border-radius: 1rem;
-            padding: 16px;
+            padding: 26px 16px 16px 16px;
             background-color: white;
             margin: 3% auto;
             box-shadow: 0 0 17px #333;
@@ -30,27 +30,6 @@
             outline: none;
         }
 
-        .main {
-            padding-left: 20px;
-        }
-
-        #login-button {
-            width: 90%;
-            margin: 1rem 0;
-            padding: 0.7rem 1rem;
-            border: none;
-            outline: none;
-            border-radius: 0.5rem;
-            background-color: #0c6ce9;
-            color: #ffffff;
-            font-weight: bold;
-            font-size: 1rem;
-        }
-
-        #login-button:hover {
-            background-color: rgb(76, 182, 185);
-        }
-
         .bookapp-button {
             width: 80%;
             margin: 0.8rem 0 0 1.2rem;
@@ -62,14 +41,6 @@
             color: #ffffff;
             font-weight: bold;
             font-size: 1rem;
-        }
-
-        .bookapp-button:hover {
-            background-color: rgb(76, 182, 185);
-        }
-
-        .column p:first-of-type {
-            color: red;
         }
     </style>
 </head>
@@ -88,16 +59,9 @@
 
     <h1 id="bookapp">Book Appointment</h1>
 
-    <div class="login">
+    <div class="forms">
         <div class="main">
             <form>
-                <label for="city"><b>City</b></label>
-                <select name="city" required>
-                    <option value="">Select City</option>
-                    <option value="Bengaluru">Bengaluru</option>
-                    <option value="Mysuru">Mysuru</option>
-                    <option value="Mangalore">Mangalore</option>
-                </select>
                 <label for="speciality"><b>Speciality</b></label>
                 <select name="speciality" required>
                     <option value="">Select Speciality</option>
@@ -111,7 +75,7 @@
                     <option value="Psychiatrist">Psychiatrist</option>
                     <option value="Radiologist">Radiologist</option>
                 </select>
-                <button id="login-button" type="submit">Submit</button>
+                <button id="form-button" type="submit">Submit</button>
             </form>
         </div>
     </div>
@@ -122,35 +86,35 @@
         <span class="line-3"></span><br>
     </div>
 
-    <div class="blogs">
+    <div class="doctors-list">
         <div class="row">
             <div class="column">
-                <h3>Dr. Rajesh Kumar</h3>
-                <p>Cardiologist</p>
-                <p>MBBS, MD, DM - Cardiology</p>
-                <p>Apollo Hospital, Bengaluru</p>
-                <button class="bookapp-button" onclick="window.location.href='appointment.html'">Book
-                    Appointment</button>
-            </div>
-            <div class="column">
-                <h3>Dr. Janaki</h3>
-                <p>General Physician</p>
+                <h3>Dr. Janaki Ram <span>&#8377 200</span></h3>
+                <p><span>General Physician</span></p>
                 <p>MBBS, MD - General Medicine</p>
                 <p>Fortis Hospital, Bengaluru</p>
                 <button class="bookapp-button" onclick="window.location.href='appointment.html'">Book
                     Appointment</button>
             </div>
             <div class="column">
-                <h3>Dr. Ashok Godse</h3>
-                <p>ENT</p>
+                <h3>Dr. Rajesh Kumar <span>&#8377 300</span></h3>
+                <p><span>Cardiologist</span></p>
+                <p>MBBS, MD, DM - Cardiology</p>
+                <p>Apollo Hospital, Bengaluru</p>
+                <button class="bookapp-button" onclick="window.location.href='appointment.html'">Book
+                    Appointment</button>
+            </div>
+            <div class="column">
+                <h3>Dr. Ashok Godse <span>&#8377 250</span></h3>
+                <p><span>ENT</span></p>
                 <p>MBBS, MS - ENT</p>
                 <p>Manipal Hospital, Mangalore</p>
                 <button class="bookapp-button" onclick="window.location.href='appointment.html'">Book
                     Appointment</button>
             </div>
             <div class="column">
-                <h3>Dr. Anita Naidu</h3>
-                <p>Paediatrician</p>
+                <h3>Dr. Anita Naidu <span>&#8377 200</span></h3>
+                <p><span>Paediatrician</span></p>
                 <p>MBBS, MD - Paediatrics</p>
                 <p>Kims Hospital, Bengaluru</p>
                 <button class="bookapp-button" onclick="window.location.href='appointment.html'">Book
@@ -159,32 +123,32 @@
         </div>
         <div class="row">
             <div class="column">
-                <h3>Dr. Chandrika A</h3>
-                <p>General Physician</p>
+                <h3>Dr. Chandrika A <span>&#8377 200</span></h3>
+                <p><span>General Physician</span></p>
                 <p>MBBS, MD - Internal Medicine</p>
                 <p>International Hospital, Mangalore</p>
                 <button class="bookapp-button" onclick="window.location.href='appointment.html'">Book
                     Appointment</button>
             </div>
             <div class="column">
-                <h3>Dr. Javid Ahmed</h3>
-                <p>Cardiologist</p>
+                <h3>Dr. Javid Ahmed <span>&#8377 200</span></h3>
+                <p><span>Psychiatrist</span></p>
                 <p>MBBS, MD, DM - Cardiology</p>
                 <p>BGS Hospital, Mysuru</p>
                 <button class="bookapp-button" onclick="window.location.href='appointment.html'">Book
                     Appointment</button>
             </div>
             <div class="column">
-                <h3>Dr. Pradeep Naik</h3>
-                <p>Gynaecologist</p>
+                <h3>Dr. Pradeep Naik <span>&#8377 300</span></h3>
+                <p><span>Gynaecologist</span></p>
                 <p>MBBS, MD - Gynaecology</p>
                 <p>JSS Hospital, Mysuru</p>
                 <button class="bookapp-button" onclick="window.location.href='appointment.html'">Book
                     Appointment</button>
             </div>
             <div class="column">
-                <h3>Dr. Ravi Shankar</h3>
-                <p>Dentist</p>
+                <h3>Dr. Ravi Shankar <span>&#8377 250</span></h3>
+                <p><span>Dentist</span></p>
                 <p>DMD</p>
                 <p>Dental Hospital, Mysuru</p>
                 <button class="bookapp-button" onclick="window.location.href='appointment.html'">Book
@@ -197,7 +161,12 @@
         <div class="foot">
             <div class="about">
                 <h4>About Us</h4>
-                <p>Dr.App is an online <br> Doctor Appointment <br> booking website</p>
+                <p>Dr.App is an Application<br>to book an online<br>Consultation with Doctor</p>
+            </div>
+            <div class="contact">
+                <h4>Contact Us</h4>
+                <p class="fa fa-phone"> 9800098222</p> <br>
+                <p class="fa fa-envelope"> dr.app&#64support.com</p>
             </div>
             <div class="qlinks">
                 <p>Quick Links</p>

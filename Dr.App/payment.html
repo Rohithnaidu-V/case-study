@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment page</title>
+    <title>Payment</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -19,8 +19,7 @@
             box-shadow: 0 0 17px #333;
         }
 
-        input, select,
-        textarea {
+        input{
             width: 90%;
             padding: 10px 20px;
             margin: 15px 0;
@@ -30,7 +29,6 @@
             border: none;
             outline: none;
         }
-
     </style>
 </head>
 
@@ -46,35 +44,32 @@
         </ul>
     </nav>
 
-    <h1 id="bookapp">Book Appointment</h1>
+    <h1 id="bookapp">Payment</h1>
 
     <div class="forms">
         <div class="main">
-            <!-- appointment form with validation -->
-            <form action="payment.html">
-                <label for="pname"><b>Patient Name</b></label>
-                <input type="text" placeholder="Enter Patientname" name="pname" pattern="[A-Za-z\s]{4,25}"
+            <form>
+                <label for="cname"><b>Name on the Card</b></label>
+                <input type="text" placeholder="Enter Name" name="cname" pattern="[A-Za-z\s]{4,25}"
                     title="must contain min 4 characters and max upto 25 characters only" required>
 
-                <label for="mob"><b>Mobile Number</b></label>
-                <input type="tel" placeholder="Enter Mobile Number" name="mob" pattern="[6-9]{1}[0-9]{9}"
-                    title="Mobile number starting with 6,7,8 or 9 is only accepted and only 10 numbers" required>
+                <label for="cnum"><b>Card Number</b></label>
+                <input type="tel" placeholder="1234 4321 1234 4321" name="cnum" pattern="\d{4}\s\d{4}\s\d{4}\s\d{4}"
+                    title="Card number should have 16 digits and space in between " required>
 
-                <label for="call"><b>Type of Call</b></label>
-                <select name="call" required>
-                    <option value="">Select</option>
-                    <option value="videocall">Video Call</Video></option>
-                    <option value="voicecall">Audio Call</option>
-                </select>
-                <label for="date"><b>Date</b></label>
-                <input type="date" name="date" required>
-                <label for="time"><b>Time</b></label>
-                <input type="time" name="time" required>
-                <label for="comment"><b>Previous illness if any</b></label>
-                <textarea name="comment" id="" cols="30" rows="5" required></textarea>
-                <button id="form-button" type="submit">Book Appointment</button>
+                <label for="monyear"><b>Expiry Month, Year & CVV code </b></label> <br>
+                <input type="tel" id="month" name="month" placeholder="mm" pattern="[0-12]{2}" required>
+                <input type="tel" id="year" name="year" placeholder="yy" pattern="[1-9]{2}" required>
+                <input type="tel" id="cvv" name="cvv" placeholder="123" pattern="\d{3}" required>
+                <button id="form-button" type="submit">Pay</button>
             </form>
         </div>
+    </div>
+    <p id="or">OR</p>
+    <div class="pay">
+        <div><img class="payicon" src="images/google-pay.png" alt="google pay"></div>
+        <div><img class="payicon" src="images/PhonePe.png" alt="phone pe"></div>
+        <div><img class="payicon" id="paytm" src="images/paytm.png" alt="paytm"></div>
     </div>
 
     <div class="line">
@@ -94,7 +89,7 @@
                 <h4>Contact Us</h4>
                 <p class="fa fa-phone"> 9800098222</p> <br>
                 <p class="fa fa-envelope"> dr.app&#64support.com</p>
-              </div>
+            </div>
             <div class="qlinks">
                 <p>Quick Links</p>
                 <ul>

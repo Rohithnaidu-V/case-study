@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .forms {
+            max-width: 350px;
+            max-height: 1000px;
+            border-radius: 1rem;
+            padding: 13px;
+            background-color: white;
+            margin: 1.5rem auto;
+            box-shadow: 0 0 17px #333;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px 20px;
+            margin: 15px 0;
+            display: inline-block;
+            border-radius: 0.5rem;
+            background-color: rgb(230, 228, 228);
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body class="body">
+        <div class="forms">
+            <div class="header">
+                <h1>Doctor Registration</h1>
+            </div>
+            <div class="main">
+                <form onsubmit="success()">
+                    <label for="uname"><b>Fullname</b></label>
+                    <input type="text" placeholder="Enter Fullname" name="uname"
+                        title="must contain min 4 characters and max upto 25 characters only" pattern="[A-Za-z\s]{4,25}"
+                        required>
+
+                    <label for="email"><b>Email ID</b></label>
+                    <input type="email" placeholder="Enter Email ID" name="email"
+                        pattern="[a-zA-Z0-9+_.-]+@[a-zA-Z]+.[a-z]{2,}"
+                        title="should contain @, . dot, min 2 characters after dot" required>
+
+                    <label for="mob"><b>Mobile Number</b></label>
+                    <input type="tel" placeholder="Enter Mobile Number" name="mob" pattern="[6-9]{1}[0-9]{9}"
+                        title="Mobile number starting with 6,7,8 or 9 is only accepted and only 10 numbers" required>
+
+                    <label for="spec"><b>Speciality</b></label>
+                    <input type="text" placeholder="Enter Speciality" name="spec"
+                        title="must contain min 3 characters and max upto 25 characters only" pattern="[A-Za-z\s]{3,25}"
+                        required>
+
+                    <label for="degree"><b>Degree</b></label>
+                    <input type="text" placeholder="Enter Degree" name="degree"
+                        title="must contain min 4 characters and max upto 25 characters only" pattern="[A-Za-z\s]{4,25}"
+                        required>
+
+                    <label for="hname"><b>Hospital Name, City</b></label>
+                    <input type="text" placeholder="Enter Hospital name, city" name="hname"
+                        title="must contain min 4 characters and max upto 25 characters only and hospital name,city" pattern="[A-Za-z\s]+,[A-Za-z\s]{4,25}"
+                        required>
+
+                    <label for="fee"><b>Consultaion Fees</b></label>
+                    <input type="tel" placeholder="Enter Consultaion fees" name="fee"
+                        title="should contain only numbers" pattern="[0-9]{3,}"
+                        required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw"
+                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+                        title="Must contain at least 1 number,1 uppercase,1 lowercase letter and 1 special character, and at least 8 or more characters"
+                        required>
+
+                    <button id="form-button" type="submit">Signup</button>
+                </form>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function success() {
+            alert("Registration Successfull");
+        }
+    </script>
+
+</body>
+
+</html>

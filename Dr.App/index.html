@@ -9,12 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   <style>
-    .header {
-      text-align: center;
-      margin: 1rem 0 2rem 0;
-    }
-
-    .login {
+    .forms {
       max-width: 350px;
       max-height: 600px;
       border-radius: 1rem;
@@ -30,31 +25,10 @@
       padding: 12px 20px;
       margin: 15px 0;
       display: inline-block;
-      border-radius: 1rem;
+      border-radius: 0.5rem;
       background-color: rgb(230, 228, 228);
       border: none;
       outline: none;
-    }
-
-    .main {
-      padding-left: 20px;
-    }
-
-    #login-button {
-      width: 90%;
-      margin: 1rem 0;
-      padding: 0.7rem 1rem;
-      border: none;
-      outline: none;
-      border-radius: 1rem;
-      background-color: #0c6ce9;
-      color: #ffffff;
-      font-weight: bold;
-      font-size: 1rem;
-    }
-
-    #login-button:hover {
-      background-color: rgb(76, 182, 185);
     }
   </style>
 </head>
@@ -89,19 +63,23 @@
   </div>
 
   <div class="container">
-    <div class="login">
+    <div class="forms">
       <div class="header">
         <h1>Feedback</h1>
       </div>
       <div class="main">
         <form>
-          <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
+          <label for="uname"><b>Name</b></label>
+          <input type="text" placeholder="Enter your name" name="uname"
+            title="must contain min 4 characters and max upto 25 characters only" pattern="[A-Za-z\s]{4,25}" required>
+
           <label for="mob"><b>Mobile Number</b></label>
-          <input type="number" placeholder="Enter Username" name="mob" required>
+          <input type="tel" placeholder="Enter Mobile number" name="mob" pattern="[6-9]{1}[0-9]{9}"
+            title="Mobile number starting with 6,7,8 or 9 is only accepted and only 10 numbers" required>
+
           <label for="comment"><b>comments</b></label>
-          <textarea name="comment" id="" cols="30" rows="5"></textarea>
-          <button id="login-button" type="submit">Submit</button>
+          <textarea name="comment" id="comment" cols="30" rows="5" required></textarea>
+          <button id="form-button" type="submit">Submit</button>
         </form>
       </div>
     </div>
@@ -114,7 +92,12 @@
     <div class="foot">
       <div class="about">
         <h4>About Us</h4>
-        <p>Dr.App is an online <br> Doctor Appointment <br> booking website</p>
+        <p>Dr.App is an Application<br>to book an online<br>Consultation with Doctor</p>
+      </div>
+      <div class="contact">
+        <h4>Contact Us</h4>
+        <p class="fa fa-phone"> 9800098222</p> <br>
+        <p class="fa fa-envelope"> dr.app&#64support.com</p>
       </div>
       <div class="qlinks">
         <p>Quick Links</p>

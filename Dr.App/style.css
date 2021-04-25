@@ -7,6 +7,45 @@
     text-decoration: none;
   }
 
+  /* login and registration page form and form button */
+
+  .body {
+    font-family: sans-serif;
+    background-image: url(images/dna.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .header {
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+  }
+  .main {
+    padding-left: 28px;
+  }
+  #form-button {
+    width: 90%;
+    margin: 1rem 0;
+    padding: 0.7rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background-color: #0c6ce9;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  #form-button:hover, .bookapp-button:hover {
+    background-color: rgb(76, 182, 185);
+  }
+  /* create an account */
+  #can a{
+    color: #0772fd;
+  }
+  #can a:hover{
+    color: rgb(76, 182, 185);
+  }
+
   /* index page */
 /* Navbar */
   #navbar {
@@ -19,7 +58,6 @@
     z-index: 1;
     padding: 1rem;
   }
-  
   #navbar ul {
     display: flex;
     align-items: center;
@@ -60,7 +98,7 @@
   #welcome{
     margin-bottom: 0.8rem;
   }
-  span{
+  #welcome span{
     color:#0c6ce9;
     font-weight: bold;
   }
@@ -111,8 +149,8 @@
   }
 /* footer */
   footer{
-  background-color: #0c6ce9;
-  color: white;
+  background-image: linear-gradient(#0c6ce9,rgb(57, 209, 214));
+  color: rgb(255, 255, 255);
   font-size: 1.1rem;
   }
   .foot{
@@ -120,16 +158,16 @@
   justify-content: space-around;
   padding: 2rem 0;
   }
-  /* .qlinks{
-  margin-left: 5rem;
-  } */
   .qlinks ul li{
   list-style: none;
   }
   .qlinks ul li a{
   color: white;
   }
-  .qlinks p, .about h4, .icons p:first-of-type{
+  .qlinks ul li a:hover{
+    text-decoration: underline;
+  }
+  .qlinks p, .about h4, .contact h4, .icons p:first-of-type{
   margin:1.5rem 0 0.5rem 0;
   font-weight: bold;
   }
@@ -146,11 +184,12 @@
   #by{
   text-align: center;
   padding: 0.6rem;
-  background-color:rgb(76, 182, 185);
+  background-color:rgb(57, 209, 214);
   font-weight: bold;
+  color: #000000;
   }
 
-/* doctors page */
+/* doctors list page */
 
   #bookapp{
   text-align: center;
@@ -159,7 +198,7 @@
 
 /* doctors list */
 
-  .blogs{
+  .doctors-list{
   margin: 0 0 30px 30px;
   }
   .row{
@@ -177,8 +216,51 @@
   }
   .column p{
   padding: 10px 20px;
+  font-size: 0.9rem;
   }
   .column h3{
   text-align: left;
   padding: 20px 0 0 20px;
+  margin-bottom: 0.6rem;
+  }
+  .column p span {
+    background-color: red;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.3rem; 
+    font-weight: bold;
+  }
+  .column h3 span {
+    background-color: rgb(2, 204, 2);
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.3rem; 
+    margin-left: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+
+  /* payment page */
+  #month, #year, #cvv {
+    width: 29%;
+  }
+  #or {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .pay {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 25rem 0 25rem;
+  }
+  .payicon {
+    margin: 1rem 0 3rem 0;
+    max-width: 20vw;
+    max-height: 20vh;
+    border-radius: 1rem;
+  }
+  #paytm {
+    margin-left: 2rem;
   }
